@@ -1,0 +1,83 @@
+
+input[type=range] {
+	-webkit-appearance: none;
+	width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+
+
+
+
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+  height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: #F2B800;
+	cursor: pointer;
+	margin-top: -11px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+}
+
+input[type=range]::-moz-range-thumb {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: #F2B800;
+	cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: #F2B800;
+	cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+  border-color: transparent;
+  color: transparent;
+
+}
+
+
+
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  cursor: pointer;
+  background: none;
+  border-top: 2px solid #CCCCCC;
+
+}
+ 
+input[type=range]::-moz-range-track {
+  width: 100%;
+  cursor: pointer;
+  background: none;
+  border-top: 2px solid #CCCCCC;
+
+}
+ 
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #CCCCCC;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #CCCCCC;
+}
+

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Master Кредит</title>
+
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="slider.css">
+	<link rel="stylesheet" type="text/css" href="custom_select.css">
+	<link rel="stylesheet" type="text/css" href="sidebars.css">
+
+	<style>
+	@font-face {
+    	font-family: Pompadur; /* Гарнитура шрифта */
+    	src: url(images/17521.ttf); /* Путь к файлу со шрифтом */
+   	}
+   	.custom-font {
+    	font-family: Pompadur, 'Comic Sans MS', cursive;
+   	}
+	</style>
+	
+</head>
+<body>
+<header>
+	<div class="header-content">
+		<div class="yellow-nav" id="yellownav">
+			<div class="nav-content">
+				<div class="switch">
+					<div>
+						<span>Частным лицам</span>
+					</div>
+					<div>
+						<div class="switch-button">
+							<div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span>Юридическим лицам</span>
+					</div>
+				</div>
+				<div class="subnav">
+					<ul>
+						<li><a href='about_company.html'><span>О компании</span></a></li>
+						<li><a href="docs.html"><span>Документы</span></a></li>
+						<li><span>Контакты</span></li>
+					</ul>
+				</div>
+				<div class="cities">
+					<span>Минск и область</span>
+				</div>
+				<div class="telephone">
+					<img src="images/phone.png">
+					<span><a href="tel:+80295123456">8 029 5-123-456</a></span>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar-button">
+			<img src="images/cross.png">
+		</div>
+		<div class="yellow-sidebar">
+				<div class="switch">
+					<div class="switch-person">
+						<span>Частным<br>лицам</span>
+					</div>
+					<div class="switch-entity">
+						<span>Юридическим<br>лицам</span>
+					</div>
+				</div>
+				<div style="width: 66%; margin: 0 auto;">
+					<div class="ul-box">
+						<ul>
+							<li><a href='about_company.html'><span>О компании</span></a></li>
+							<li><a href="docs.html"><span>Документы</span></a></li>
+							<li><span>Контакты</span></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="cities">
+						<span>Минск и область</span>
+					</div>
+					<div class="telephone">
+						<img src="images/phone.png">
+						<span><a href="tel:+80295123456">8 029 5-123-456</a></span>
+					</div>
+					</div>
+			</div>
+		<div class="white-nav">
+			<div class="nav-content">
+				<a href="index.html">
+					<div class="logo"><img src="images/logo.svg"></div>
+				</a>
+				<div class="subnav">
+					<ul>
+						<li><a href='consumer_credit.html'>Потребительские кредиты</a></li>
+						<li><a href='refinancing.html'>Рефинансирование</a></li>
+						<li><a href='car_credit.html'>Автокредиты</a></li>
+						<li style="margin-right: 0"><a href='home_loans.html'>Кредиты на жилье</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="slide main-slide">
+	<div class="page">
+		<h3><span class="yellow-fond">Подберем кредит с наименьшей ставкой % </span></h3>
+		<p><span class="black-fond">Введите свои данные и получите мгновенный подбор лучших условий!</span></p>
+		<div class="head-calculator">
+			<form>
+				<div>
+					<div>
+						<label for="sum" class="custom-font">Сумма, BYN</label>
+						<input type="range" min="1000" max="30000" step="30" value="1000" id="sum">
+						<div class="span-holder">
+							<span>1000</span><span>15000</span><span>30000</span>
+						</div>
+					</div>
+				</div>
+				
+					<!-- <div>
+						<label for="select" class="custom-font">Цель кредита</label>
+						<div class="custom-select" style="width: 200px;">
+							<select name="select" id="select">
+								<option selected value="1">Автокредит</option>
+			    				<option value="2">Кредит для бизнеса</option>
+			    				<option value="3">Бытовой кредит</option>
+			    			</select>
+		    			</div>
+	    			</div> -->
+    			<div class="super-wrapper">
+	    			<div class="Wrapper" style="width: 180px;position: absolute;">
+	    				<p class="custom-font">Цель кредита</p>
+						<div class="selectric" onclick="show ();">
+	    					<div class="label"><span>Цель кредита</span><b class="button">▾</b>
+	    					</div>
+	    					<div id="options" class="hidden">
+					            <ul class="select-menu">
+					                <li>Автокредит</li>
+					                <li>Кредит для бизнеса</li>
+					                <li>Бытовой кредит</li>
+<!-- 					                <li>Option 4</li>
+					                <li>Option 5</li>
+					                <li>Option 6</li>
+					                <li>Option 7</li>  -->
+					            </ul>
+					        </div>
+					    </div>
+					</div>
+				</div>
+				<div>
+					<div>
+						<label for="time" class="custom-font">Срок, мес.</label>
+						<input type="range" min="12" max="84" step="6" value="1000" id="time">
+						<div class="span-holder">
+							<span>12</span><span>48</span><span>84</span>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div id="button-container">
+					<button type="submit"><p>Подобрать</p></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="head-numbers">
+	<div class="page">
+		<div>
+			<h2>1000+</h2>
+			<p>счастливых клиентов</p>
+		</div>
+		<div>
+			<h2>700+</h2>
+			<p>купили машину</p>
+		</div>
+		<div>
+			<h2>80%</h2>
+			<p>получили деньги</p>
+		</div>
+		<div>
+			<h2>70%</h2>
+			<p>постоянные клиенты</p>
+		</div>
+	</div>
+</div>
+
+<div class="slide second-slide">
+	<div class="page">
+		<h2 class="title custom-font">Мы поможем получить кредит, даже если:</h2>
+		<div class="second-slide-content-box">
+			<div>
+				<div>
+					<div>
+						<h3>Низкий</h3>
+						<p>официальный доход</p>
+					</div>
+					<div>
+						<h3>Нагрузка</h3>
+						<p style="margin-bottom: 5px">по кредитам</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div>
+						<h3>Срочно</h3>
+						<p>нужны деньги</p>
+					</div>
+					<div>
+						<h3>Отказ</h3>
+						<p style="margin-bottom: 5px">в банке</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div>
+						<h3>Не одобряют</h3>
+						<p>нужную сумму в банке</p>
+					</div>
+					<div>
+						<h3>Плохая</h3>
+						<p style="margin-bottom: 5px">кредитная история</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div>
+						<h3>Нет времени</h3>
+						<p>на подбор лучших условий</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="page">
+	<div class="slide third-slide">
+		<div class="box">
+			<div>
+				<h3 class="title custom-font" style="top:-10px; left: 100px; z-index: 1; white-space: nowrap"><span class="black-fond white-letters" style="padding: 5px 5px 0px 5px;">Семейный отдых</span></h3>
+				<div class="grid-box grid-box-1">
+					<h5>100 лет не были на море, а денег нет?</h5>
+					<p>Мы поможем спланировать долгожданный отдых!</p>
+				</div>
+			</div>
+			<div class="image_3">
+				<!-- <img src="images/image_3.png"> -->
+			</div>
+			<div>
+				<div class="grid-box grid-box-3">
+					<h5>Машина - не просто способ передвижения!</h5>
+					<p>Ты можешь позволить себе лучшее</p>
+				</div>
+				<h3 class="title custom-font" style="top:190px; left: 120px; z-index: 1; white-space: nowrap"><span class="black-fond white-letters" style="padding: 5px 5px 0px 5px;">Машина</span></h3>
+				
+			</div>
+			<div class="image_5">
+				<!-- <img src="images/image_5.png"> -->
+			</div>
+			<div>
+				<div class="grid-box grid-box-5">
+					<h5>Не хватает денег на свадьбу мечты?</h5>
+					<p>Один раз в жизни можно себе позволить праздник</p>
+				</div>
+				<h3 class="title custom-font" style="top:160px; left: -80px; z-index: 1; white-space: nowrap"><span class="black-fond white-letters" style="padding: 5px 5px 0px 5px;">Свадьба</span></h3>
+				
+			</div>
+			<div class="image_4">
+				<!-- <img src="images/image_4.png"> -->
+			</div>
+		</div>
+	</div>
+	<div class="slide fourth-slide">
+		<div>
+			<h3 class="title custom-font">Почему это выгодно?</h3>
+			<p>Вместо десятков банков:</p>
+		</div>
+		<div class="fourth-slide-box">
+				<div>
+					<figure>
+						<img src="images/clocks.png">
+					</figure>
+
+					<figure>
+						<img src="images/passport.png">
+					</figure>
+
+					<figure>
+						<img src="images/document.png">
+					</figure>
+				</div>
+				
+				<div>
+					<p>Оформление<br>за <strong>1 день</strong></p>
+					<p>Нужен только<br><strong>паспорт</strong></p>
+					<p>Помощь в <strong>улучшении<br>кредитной истории</strong></p>
+				</div>
+
+		</div>
+	</div>
+	<div class="slide fifth-slide">
+		<div>
+			<h3 class="title custom-font">Рассчитать условия кредита</h3>
+			<p>Введите данные и получите кредит сегодня!</p>
+		</div>
+		<div class="main-calculator">
+			<div class="results">
+				<div>
+					<div>
+						<div>
+							<span>Ежемесячный платеж</span>
+						</div>
+						<div class="res">
+							<span>190 BYN</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Общая сумма выплат</span>
+						</div>
+						<div class="res">
+							<span>15 971 BYN</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Переплата по кредиту</span>
+						</div>
+						<div class="res">
+							<span>5 671 BYN</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<span>Процент переплаты</span>
+						</div>		
+						<div class="res">
+							<span>55,06%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="calculator">
+				<form>
+				<div>
+					<div>
+						<label for="sum">Сумма, BYN</label>
+						<input type="range" min="1000" max="30000" step="30" value="1000" id="sum">
+						<div class="flex">
+							<span>1000</span><span>15000</span><span>30000</span>
+						</div>
+					</div>
+					<div>
+						<label for="time">Срок, мес.</label>
+						<input type="range" min="12" max="84" step="6" value="12" id="time">
+						<div class="flex">
+							<span>12</span><span>48</span><span>84</span>
+						</div>
+					</div>
+					<div>
+						<label for="stake">Ставка, %</label>
+						<input type="range" min="12" max="15" step="10" value="12" id="stake">
+						<div class="flex">
+							<span>12,5</span><span>14</span><span>15</span>
+						</div>
+					</div>
+				</div>
+				<div style="display: flex; justify-content: space-between; position: relative;">
+					<button type="submit"><p>Подобрать</p></button>
+				</div>
+				</form>
+			</div>
+			<img src="images/logo.svg">
+		</div>
+	</div>
+	<div class="slide sixth-slide">
+		<div class="algoritm">
+			<img src="images/profile.png">
+			<span>Заполните анкету</span>
+			<img src="images/arrow.png">
+			<img src="images/telephone.png">
+			<span>Мы свяжемся с&nbsp;вами</span>
+			<img src="images/arrow.png">
+			<img src="images/money.png">
+			<span>Вы получите деньги</span>
+		</div>
+		<div class="form">
+			<div>
+				<form>
+					<h3 class="title custom-font">Хочу получить кредит сейчас!</h3>
+					<p>вместо ожидания месяца в банке</p>
+					<input type="number" name="sum" placeholder="Сумма в рублях" required>
+					<input type="number" name="time" placeholder="Срок кредитования в месяцах" required>
+					<input type="tel" name="tel" placeholder="+375" required>
+					<button type="submit"><p>Рассчитать</p></button>
+				</form>
+			</div>
+			<div>
+			</div>
+		</div>
+	</div>
+	<div class="slide seventh-slide">
+		<h2 class="title custom-font">Наши клиенты</h2>
+		<div class="comment-field">
+			<div class="comment-photo">
+				<figure>
+					<img src="images/comment_photo_1.png">
+					<figcaption><strong>Евгений, 46 лет</strong><br>Водитель такси</figcaption>
+				</figure>
+			</div>
+			<div class="comment-quote">
+				<img src="images/quotes.png">
+				<p>Я очень благодарен Master Кредит! С банками всегда куча заморочек и проблем, у ребят все просто и быстро!<br><br>Разбил машину, просто черная полоса, а работаю на машине, если не Master Кредит, пропал бы! Огромное человеческое спасибо!</p>
+				<img src="images/quotes.png" style="transform: rotate(180deg)">
+			</div>
+			<!-- <div class="comment-nav"> -->
+				<img src="images/arrow_yellow.png" style="transform: rotate(180deg)">
+				<img src="images/arrow_yellow.png">
+			<!-- </div> -->
+			<img src="images/logo.svg">
+		</div>
+	</div>
+	<div class="slide eighth-slide">
+		<h2 class="title custom-font">Популярные вопросы</h2>
+		<div class="question white-question">
+			<div>
+				<p>Каковы шансы получить кредит только по паспорту?</p>
+			</div>
+			<img src="images/triangle_white.png">
+		</div>
+		<div class="question yellow-question">
+			<div>
+				<p>Зачем нужно рефинансировать кредит?</p>
+			</div>
+			<img src="images/triangle_yellow.png">
+		</div>
+		<div class="question white-question">
+			<div>
+				<p>Нужны ли поручители при покупки авто в кредит?</p>
+			</div>
+			<img src="images/triangle_white.png">
+		</div>
+		<div>
+			<p>Задать свой вопрос</p>
+		</div>
+	</div>
+	<div class="slide ninth-slide form">
+		<div>
+			<form>
+				<h2 class="title custom-font">Кредитная история и ваш личный кредитный рейтинг в подарок!</h2>
+				<p>Оставьте свои данные и мы вышлем вам информацию бесплатно</p>
+				<input type="tel" name="tel" placeholder="+375" style="margin-left: 0" required>
+				<button type="submit" style="margin-left: 0"><p>Отправить</p></button>
+			</form>
+		</div>
+		
+		<img src="images/man_finger.png" height="390" style="position: absolute;right: 250px;">
+		<img src="images/gift.png">
+		
+	</div>
+</div>
+<div class="page">
+		<section class="contacts">
+			<h2 class="title custom-font">Контакты</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50786.79485401171!2d27.545911509721822!3d53.90257461713392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfc7f84568c3%3A0x92f114a4cc6ea2bc!2z0JTQtdGC0YHQutCw0Y8g0L7QtNC10LbQtNCwIFNhcmRpbmEgYmFieQ!5e0!3m2!1sru!2sru!4v1595436982731!5m2!1sru!2sru" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<p>Mastercredit.by не оказывает услуг по оформлению и предоставлению населению микрозаймов, кредитов и других финансовых услуг, регулируемых Указом Президента №325 "О привлечении и предоставлении займов, деятельности микрофинансовых организаций". ООО «МастеркРедит» (УНП 193621583) оставляет за собой право отправлять заявки в зависимости от территориальности и иных критериев в компании-партнеры, работающие под товарным знаком Mastercredit.
+		«Mastercredit» — является зарегистрированным товарным знаком. Не допускается его использования на сторонних ресурсах, не являющихся партнерами правообладателя. За неправомерное использование зарегистрированного товарного знака «Mastercredit» предусмотрена ответственность в соответствии с законодательством РБ.
+		политика конфиденциальности | согласие на обработку персональных данных</p>
+		</section>
+	</div>
+<div class="popup-wrapper">
+	<div>
+		<div class="popup-content">
+			<h4 class="custom-font no-margins">Введите номер телефона</h4>
+			<p class="no-margins">и мы сообщим вам условия кредитования</p>
+			<form>
+				<input type="tel" name="tel" placeholder="+375" required>
+				<button type="submit"><p>Отправить</p></button>
+			</form>
+		</div>
+		<img src="images/ipad.png" height="250">
+		<img src="images/logo.png">
+		<img src="images/cross.svg">
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="custom_select.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</html>
