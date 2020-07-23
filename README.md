@@ -4,11 +4,9 @@ Site for financial company 'Master Credit'. Not commercial, just practice.
 Thanks, TraversyMedia!
 
 
-
 <p align="center">
-![OctoNyanCat gif](https://octodex.github.com/images/nyantocat.gif)
+	 <img src="https://octodex.github.com/images/nyantocat.gif" alt="OctoNyanCat gif">
 </p>
-
 
 
 <p align="center">
